@@ -1,0 +1,214 @@
+ html {
+     height: 100%;
+ }
+
+body {
+  text-align: center;
+  height: 100%;
+  font-family: courier;
+}
+
+body.regularPlay {
+  background-color: #DCC3A0;
+}
+
+body.warPlay {
+  background-color: #882a10;
+}
+
+body.gameOver {
+  background-color: #8C6445;
+  color: #DCC3A0;
+}
+
+.wrap {
+  position:relative;
+	height:100%;
+}
+
+span{
+display: inline-block;
+}
+
+h1 {
+  letter-spacing: 0.1em;
+  height: 170px;
+  line-height: 200px;
+  font-family: 'Smokum', cursive;
+  font-weight: 900;
+}
+
+h1.regularPlay {
+  font-size: 11rem;
+  margin: 3%;
+  color: #8C6445;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+h1.warPlay {
+  font-size: 5rem;
+  margin: 3%;
+  color: #DCC3A0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+h1.warInterimPlay {
+  font-size: 11rem;
+  margin: 3%;
+  color: #DCC3A0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+h1.gameOver {
+  font-size: 7rem;
+  color: #DCC3A0;
+  margin-top: 15%;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.remove {
+  display: none;
+}
+
+#subtitle {
+  padding-bottom: 5px;
+}
+
+.cardCount {
+  display: inline-block;
+}
+
+.card {
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  width: 20%;
+}
+
+.cardDeck {
+  box-shadow: none;
+}
+
+.warDeck1 {
+  position: relative;
+  bottom: +350px;
+}
+
+.warDeck2 {
+  position: relative;
+  bottom: +700px;
+}
+
+#warCards1 {
+  right: -46%;
+  bottom: -8px;
+  z-index: -1;
+}
+
+#warCards2 {
+  right: -28%;
+  bottom: -16px;
+  z-index: -2;
+}
+
+#warCards3 {
+  right: -10%;
+  bottom: -24px;
+  z-index: -3;
+}
+
+#warCards4 {
+  right: +8%;
+  bottom: -32px;
+  z-index: -4;
+}
+
+#warCards5 {
+  right: -8%;
+  bottom: -32px;
+  z-index: -4;
+}
+
+#warCards6 {
+  right: +10%;
+  bottom: -24px;
+  z-index: -3;
+}
+
+#warCards7 {
+  right: +28%;
+  bottom: -16px;
+  z-index: -2;
+}
+
+#warCards8 {
+  right: +46%;
+  bottom: -8px;
+  z-index: -1;
+}
+
+.cardStart {
+  background-color: #e5e5f7;
+  opacity: 1;
+  background-image:  linear-gradient(135deg, #882a10 25%, transparent 25%), linear-gradient(225deg, #882a10 25%, transparent 25%), linear-gradient(45deg, #882a10 25%, transparent 25%), linear-gradient(315deg, #882a10 25%, #e5e5f7 25%);
+  background-position:  11px 0, 11px 0, 0 0, 0 0;
+  background-size: 22px 22px;
+  background-repeat: repeat;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  border-radius: 25px;
+}
+
+.cardValue {
+  margin: auto;
+  font-family: 'Smokum', cursive;
+  letter-spacing: .1em;
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+.redCard {
+  color: #882a10;
+}
+
+.container, .row, .card {
+    height: 100%;
+}
+
+.cards {
+  height: 350px;
+}
+
+.btn {
+  background-color: #8C6445;
+  color:#DCC3A0;
+  font-family: 'Smokum', cursive;
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: .2em;
+  margin: 25px;
+  height: 2%;
+  width: 20%;
+  display: inline-block;
+  border: 3px solid black;
+  border-radius: 20%;
+  transition-duration: 0.4s;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.btn:hover {
+  background-color: #882a10;
+  color:#DCC3A0;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
