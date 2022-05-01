@@ -23,7 +23,6 @@ $(".btn").click(function() {
   $("." + "card").addClass("cardPlayed");
   $("." + "cardCounter").removeClass("hide");
   playCard();
-  console.log('here d 1 ' + player1Cards.length + ' 2 ' + player2Cards.length)
 });
 
 document.addEventListener("keydown", function() {
@@ -185,10 +184,8 @@ function playCard() {
     $("#" + "card1Count").text(player1Cards.length);
     $("#" + "card2Count").text(player2Cards.length);
     previousPlayed = previousPlayed.concat(playedCards)
-    console.log('here a 1 ' + player1Cards.length + ' 2 ' + player2Cards.length)
     // declareWar(player1Cards, player2Cards, previousPlayed);
     declareWar();
-    console.log('here c 1 ' + player1Cards.length + ' 2 ' + player2Cards.length)
   }
 }
 
@@ -335,7 +332,6 @@ function declareWar() {
                 gameOver('Your opponent', 'You')
                 return
               }
-              console.log('here b 1 ' + player1Cards.length + ' 2 ' + player2Cards.length)
               return
             }, 2 * 1000);
           }, 2 * 1000);
